@@ -1,1 +1,12 @@
+body {
+    background-color: red;
+    position: relative;
+}
 
+.background {
+    background-color: #1b1b1b;
+    height: 1024px;
+    width: 576px;
+    position: absolute;
+    transform: translate(50%);
+}
