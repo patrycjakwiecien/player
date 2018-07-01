@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/flickity.css" media="screen">
 </head>
 
+
 <body>
     <div class="background">
         <div class="image-gradient"><img src="images/bg_image_bw.jpg"></div>
@@ -105,7 +106,9 @@
             <div>
                 <nav>
                     <div class="playlist-menu">
-                        <div class="playlist-button"><img src="images/playlist_ico.svg"></div>
+                       <div id="playlist_button">
+                            <a href="#songs" onclick="myFunction()"><img src="images/playlist_ico.svg"></a>
+                        </div>
                         <div class="next-song">
                             <h2>NEXT</h2>
                             <p><span id="title">Livin'In A Movie </span><span id="spacing">  .  .  .  .  .  .  . .  .  .  .</span> 3:27</p>
@@ -198,7 +201,9 @@
             <div>
                 <nav>
                     <div class="playlist-menu">
-                        <div class="playlist-button"><img src="images/playlist_ico.svg"></div>
+                       <div id="playlist_button">
+                            <a href="#songs" onclick="myFunction()"><img src="images/playlist_ico.svg"></a>
+                        </div>
                         <div class="next-song">
                             <h2>NEXT</h2>
                             <p><span id="title">Livin'In A Movie </span><span id="spacing">  .  .  .  .  .  .  . .  .  .  .</span> 3:27</p>
@@ -257,7 +262,9 @@
 
         <nav>
             <div class="playlist-menu">
-                <div class="playlist-button"><img src="images/playlist_ico.svg"></div>
+                <div id="playlist_button">
+                    <a href="#songs" onclick="myFunction()"><img src="images/playlist_ico.svg"></a>
+                </div>
                 <div class="next-song">
                     <h2>NEXT</h2>
                     <p><span id="title">Livin'In A Movie </span><span id="spacing">  .  .  .  .  .  .  . .  .  .  .</span> 3:27</p>
@@ -266,7 +273,8 @@
         </nav>
     </div>
 
-    <div class="playlist">
+
+    <div id="playlist_popup">
         <div class="transparent-background-playlist"></div>
 
         <div class="image-gradient"><img src="images/bg_image_bw.jpg"></div>
@@ -369,11 +377,23 @@
 
     </div>
 
-    <script src="js/main.js"></script>
 
-    <!-- Latest compiled and minified JavaScript -->
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script language="JavaScript" type="text/javascript" src="js/main.js"></script>
+
+
+<!--
+     Latest compiled and minified JavaScript 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js/fickity.pkgd.min.js"></script>
+-->
+
+    <script language="JavaScript" type="text/javascript" src="js/fickity.pkgd.min.js"></script>
+
 
 </body>
 
