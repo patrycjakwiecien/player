@@ -51,13 +51,13 @@ html {
     font-size: 24px;
 }
 
-#container-buttons #image-1 img {
+#container-buttons #back-image img {
     flex: 1;
     padding-left: 54px;
     height: 29px;
 }
 
-#container-buttons #image-2 img {
+#container-buttons #more-image img {
     height: 29px;
     padding-right: 64px;
 }
@@ -243,4 +243,83 @@ nav {
 #time-right {
     margin-right: 50px;
     color: 9a9b9b;
+}
+
+.background-cover {
+    background-color: #1b1b1b;
+    height: 1024px;
+    width: 576px;
+    position: absolute;
+    transform: translate(120%);
+}
+
+.background-cover-transparent {
+    background: rgba(27, 27, 27, 0.97);
+    height: 1024px;
+    width: 576px;
+    position: absolute;
+    transform: translate(120%);
+    position: relative;
+    z-index: 10;
+}
+
+.background-cover .main-cd-image img {
+    transform: rotate(45deg);
+}
+
+.background-cover #container-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 11;
+    top: 54px;
+    position: relative;
+}
+
+.background-cover-transparent .album-title {
+    margin-top: 29px;
+}
+
+.main-cover-small img {
+    height: 188px;
+    margin-top: 200px;
+}
+
+.dots {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: #9a9b9b;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+#dot-1 {
+    margin-left: 258px;
+}
+
+#dot-3 {
+    margin-right: 258px;
+}
+
+.options {
+    margin-top: 46px;
+    font-size: 24px;
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+}
+
+p {
+    0 0 0px;
+}
+
+.option {
+    margin-bottom: 20px;
 }
