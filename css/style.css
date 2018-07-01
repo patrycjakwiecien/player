@@ -2,8 +2,8 @@
     box-sizing: border-box;
 }
 
-html {
-    background-color: black;
+body {
+    background-color: gray !important;
 }
 
 .image-gradient img {
@@ -101,6 +101,7 @@ html {
 
 .album-title {
     margin-top: 173px;
+    z-index: 3;
 }
 
 .album-title h2 {
@@ -112,7 +113,7 @@ html {
 .album-title p {
     font-size: 18px;
     font-family: 'PT Sans', sans-serif;
-    color: 9a9b9b;
+    color: #9a9b9b;
 }
 
 #play-buttons {
@@ -250,7 +251,7 @@ nav {
     height: 1024px;
     width: 576px;
     position: absolute;
-    transform: translate(120%);
+    transform: translate(110%);
 }
 
 .background-cover-transparent {
@@ -258,7 +259,7 @@ nav {
     height: 1024px;
     width: 576px;
     position: absolute;
-    transform: translate(120%);
+    transform: translate(110%);
     position: relative;
     z-index: 10;
 }
@@ -322,4 +323,132 @@ p {
 
 .option {
     margin-bottom: 20px;
+}
+
+.playlist {
+    background-color: #1b1b1b;
+    height: 1024px;
+    width: 576px;
+    position: absolute;
+    transform: translate(10%);
+}
+
+#play-image-small img {
+    width: 131px;
+    height: 131px;
+    margin-top: -50px;
+    margin-right: 34px;
+}
+
+.active-song {
+    margin-top: -35px;
+    margin-left: -78px;
+    font-family: 'PT Sans', sans-serif;
+    z-index: 13;
+    position: relative;
+}
+
+.active-song h2 {
+    font-size: 24px;
+    color: #0fd65a;
+}
+
+.active-song p {
+    font-size: 18px;
+    color: #9a9b9b;
+}
+
+.playlist-background {
+    background-color: #ffffff;
+    height: 80%;
+    width: 100%;
+    margin-top: 60px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.playlist-background ol {
+    margin-top: 30px;
+}
+
+.playlist-background li {
+    margin-left: 63px;
+    margin-right: 50px;
+    margin-top: 30px;
+    color: #9a9b9b;
+    width: 400px;
+}
+
+.playlist-background p {
+    color: black;
+    margin-left: 26px;
+}
+
+#margin-li {
+    margin-left: 70px;
+}
+
+ol.dots-middle {
+    margin-left: -400px;
+    margin-top: 30px;
+}
+
+ol.dots-middle p {
+    margin-top: 30px;
+    letter-spacing: 6px;
+}
+
+ol.time {
+    padding-left: 10px;
+    margin-right: 70px;
+    margin-top: 30px;
+}
+
+ol.time p {
+    margin-top: 30px;
+}
+
+.transparent-background-playlist {
+    height: 1024px;
+    width: 576px;
+    position: absolute;
+    transform: translate(0%);
+    background: linear-gradient(transparent, white);
+    z-index: 16;
+}
+
+.playlist nav {
+    height: 150px;
+    background-color: white;
+    z-index: 17;
+    position: absolute;
+}
+
+.playlist .shuffle-play {
+    width: 448px;
+    height: 59px;
+    background-color: #0fd65a;
+    border-radius: 50px;
+    position: relative;
+}
+
+.playlist .shuffle-play p {
+    font-size: 20px;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.playlist nav .arrow img {
+    width: 30px;
+    transform: rotate(270deg);
+    height: 50px;
+    margin-top: 20px;
 }
