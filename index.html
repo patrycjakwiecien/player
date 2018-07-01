@@ -5,25 +5,129 @@
     <meta charset="UTF-8">
     <title>Player</title>
     <link rel="stylesheet" href="css/style.css">
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+    <!-- other head stuff... -->
+    <link rel="stylesheet" href="css/flickity.css" media="screen">
 
 </head>
 
 <body>
-    <div class="background">
+   <div class="background">
         <div class="image-gradient"><img src="images/bg_image_bw.jpg"></div>
 
+        <center>
+            <div class="title">
+
+                <h2>ALBUM</h2>
+
+                <p>Unreleased</p>
+
+            </div>
+        </center>
+
+        <div id="container-buttons">
+
+            <div id="image-1" class="elements">
+                <img src="images/back_ico.svg">
+            </div>
+
+            <div id="image-2" class="elements">
+                <img src="images/more_ico.svg">
+            </div>
+
+        </div>
+
+
+        <!-- Flickity HTML init -->
+        <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
+            <div class="gallery-cell">
+                <center>
+                    <div class="main-cd-image">
+                        <img src="images/unreleased_cover.png">
+                        <center>
+                            <div class="circle">
+                                <div class="daftcode-logo">
+                                    <img src="images/daft_logo.svg"></div>
+                            </div>
+                        </center>
+                    </div>
+                </center>
+            </div>
+            <div class="gallery-cell"><img class="small-cover" src="images/cover.png"></div>
+            <div class="gallery-cell"><img class="small-cover" src="images/cover-1.png"></div>
+        </div>
+
+        <center>
+            <div class="album-title">
+
+                <h2>Self Conscious</h2>
+
+                <p>KANYE WEST</p>
+
+            </div>
+        </center>
+
+        <div id="play-buttons">
+
+            <div id="shuffle" class="playing-buttons">
+                <img src="images/shuffle_ico.svg">
+            </div>
+
+            <div id="prev" class="playing-buttons prev-next">
+                <img src="images/next_ico.svg">
+            </div>
+
+            <div id="next" class="playing-buttons prev-next">
+                <img src="images/previous_ico.svg">
+            </div>
+
+            <div id="repeat" class="playing-buttons">
+                <img src="images/repeat_ico.svg">
+            </div>
+
+        </div>
+
+        <center>
+            <div id="play"><img src="images/Play_inactive.png"></div>
+        </center>
+
+        <div class="song-time">
+            <p id="time-left">1:47</p>
+            <center><img src="images/load.png"></center>
+            <p id="time-right">4:21</p>
+        </div>
+
+        <div class="sound"><img src="images/sound.png">
+            <div>
+                <nav>
+                    <div class="playlist-menu">
+                        <div class="playlist-button"><img src="images/playlist_ico.svg"></div>
+                        <div class="next-song">
+                            <h2>NEXT</h2>
+                            <p><span id="title">Livin'In A Movie </span><span id="spacing">  .  .  .  .  .  .  . .  .  .  .</span> 3:27</p>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        </div>
 
 
 
-        <script src="js/main.js"></script>
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/fickity.pkgd.min.js"></script>
 </body>
 
 </html>

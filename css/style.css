@@ -1,6 +1,14 @@
-body {
-    background-color: red;
-    position: relative;
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: black;
+}
+
+.image-gradient img {
+    position: absolute;
+    z-index: -1;
 }
 
 .background {
@@ -8,5 +16,231 @@ body {
     height: 1024px;
     width: 576px;
     position: absolute;
-    transform: translate(50%);
+    transform: translate(10%);
+}
+
+#container-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 3;
+    top: 54px;
+    position: relative;
+}
+
+.title {
+    z-index: 2;
+    position: absolute;
+    margin-left: 40%;
+    padding-top: 45px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.title h2 {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    color: #9a9b9b;
+}
+
+.title p {
+    color: white;
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+
+#container-buttons #image-1 img {
+    flex: 1;
+    padding-left: 54px;
+    height: 29px;
+}
+
+#container-buttons #image-2 img {
+    height: 29px;
+    padding-right: 64px;
+}
+
+.main-cd-image {
+    width: 320px;
+    height: 320px;
+    top: 133px;
+}
+
+.daftcode-logo img {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle {
+    background-color: #1b1b1b;
+    border-color: #0fd65a;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-width: 5px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    transform: translate(-50%, -50%);
+}
+
+.small-cover {
+    height: 127px;
+    margin-left: 64px;
+    margin-right: 64px;
+    display: inline-block;
+    margin-top: 100px;
+}
+
+.album-title {
+    margin-top: 173px;
+}
+
+.album-title h2 {
+    color: #0fd65a;
+    font-size: 36px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.album-title p {
+    font-size: 18px;
+    font-family: 'PT Sans', sans-serif;
+    color: 9a9b9b;
+}
+
+#play-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 88px;
+}
+
+#shuffle img {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#repeat img {
+    margin-right: 50px;
+}
+
+.prev-next {
+    position: absolute;
+    z-index: 4;
+}
+
+#next {
+    left: 125px;
+}
+
+#prev {
+    right: 125px;
+}
+
+.flickity-prev-next-button {
+    position: relative;
+    z-index: 5;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+}
+
+#play {
+    top: -95px;
+    position: relative;
+    z-index: 6;
+    width: 200px;
+}
+
+#play img {
+    height: 160px;
+}
+
+nav {
+    background-color: white;
+    height: 89px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.sound img {
+    margin-top: 27px;
+}
+
+.playlist-button img {
+    margin-left: 45px;
+    margin-top: 30px;
+}
+
+.playlist-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.playlist-menu .next-song {
+    margin-right: 50px;
+    font-family: 'PT Sans', sans-serif;
+    color: #9a9b9b;
+}
+
+.playlist-menu .next-song h2 {
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 21px;
+}
+
+.playlist-menu .next-song p {
+    font-size: 24px;
+    width: 400px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#title {
+    color: #1b1b1b;
+    margin-right: 4px;
+}
+
+#spacing {
+    letter-spacing: 2.5px;
+}
+
+.song-time {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    z-index: 8;
+    margin-bottom: -60px;
+}
+
+.song-time img {
+    margin-top: -115px;
+}
+
+.song-time p {
+    margin-top: -58px;
+}
+
+#time-left {
+    margin-left: 50px;
+    color: 9a9b9b;
+}
+
+#time-right {
+    margin-right: 50px;
+    color: 9a9b9b;
 }
