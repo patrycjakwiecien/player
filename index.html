@@ -20,7 +20,11 @@
 
 
 <body>
+
+    <!-- First layout - background -->
+
     <div class="background">
+
         <div class="image-gradient"><img src="images/bg_image_bw.jpg"></div>
 
         <center>
@@ -32,18 +36,22 @@
 
         <div id="container-buttons">
 
-            <div id="back-image" class="elements">
+            <div class="back-image">
+
                 <img src="images/back_ico.svg">
+
             </div>
 
-            <div id="more-image" class="elements">
-                <img src="images/more_ico.svg">
-            </div>
+            <div id="more-button">
 
+                <input type="image" value="Animate" src="images/more_ico.svg" onclick="document.getElementById('background-covers').className='example';">
+
+            </div>
         </div>
 
 
         <!-- Flickity HTML init -->
+
         <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
             <div class="gallery-cell">
                 <center>
@@ -93,7 +101,8 @@
         </div>
 
         <center>
-            <div id="play"><img src="images/Play_inactive.png"></div>
+            <div id="play"><button onclick="myFunction()"><img id="active_button" src="images/Play_inactive.png" width="160" height="160"></button></div>
+
         </center>
 
         <div class="song-time">
@@ -106,8 +115,10 @@
             <div>
                 <nav>
                     <div class="playlist-menu">
-                       <div id="playlist_button">
-                            <a href="#songs" onclick="myFunction()"><img src="images/playlist_ico.svg"></a>
+                        <div id="playlist_button">
+
+                            <input type="image" value="Animate" src="images/playlist_ico.svg" onclick="document.getElementById('playlist').className='move';">
+
                         </div>
                         <div class="next-song">
                             <h2>NEXT</h2>
@@ -117,92 +128,189 @@
                 </nav>
             </div>
         </div>
-    </div>
 
-    <div class="background-cover">
-        <div class="image-gradient"><img src="images/bg_image_bw.jpg"></div>
 
-        <center>
-            <div class="title">
-                <h2>ALBUM</h2>
-                <p>Unreleased</p>
+
+        <!-- Second layout - Playlist -->
+
+        <div id="playlist">
+            <div class="transparent-background-playlist"></div>
+
+            <div class="image-gradient"><img src="images/bg_image_bw.jpg"></div>
+            <div id="container-buttons">
+
+                <div class="back-image">
+
+                    <input id="back_ico_back_playlist" type="image" value="Animate" src="images/back_ico.svg">
+
+
+
+                </div>
+                <div class="active-song">
+                    <h2>Self Conscious</h2>
+
+                    <p>KANYE WEST</p>
+                </div>
+                <div id="play-image-small" class="elements">
+                    <img src="images/Play_active.png">
+                </div>
+
             </div>
-        </center>
 
-        <div id="container-buttons">
+            <div class="playlist-background">
+                <ol>
+                    <li>
+                        <p>Livin' In A Movie</p>
+                    </li>
+                    <li>
 
-            <div id="back-image" class="elements">
-                <img src="images/back_ico.svg">
+                        <p>Dark Fantasy</p>
+                    </li>
+
+                    <li>
+                        <p>All od the Lights</p>
+                    </li>
+                    <li>
+                        <p>So Appalled</p>
+                    </li>
+                    <li>
+                        <p>Devil in a New Dress</p>
+                    </li>
+                    <li>
+                        <p>Runaway</p>
+                    </li>
+                    <li>
+                        <p>Hell of a Life</p>
+                    </li>
+                    <li>
+                        <p>Blame Game</p>
+                    </li>
+                    <li>
+                        <p>Lost in the World</p>
+                    </li>
+                    <li id="margin-li">
+                        <p>Who Will Survive in America</p>
+                    </li>
+                    <li id="margin-li">
+                        <p>Dark Fantasy</p>
+                    </li>
+
+                </ol>
+
+                <ol class="dots-middle">
+                    <p dir="rtl">.............</p>
+                    <p dir="rtl">................</p>
+                    <p dir="rtl">.............</p>
+                    <p dir="rtl">.................</p>
+                    <p dir="rtl">..........</p>
+                    <p dir="rtl">..................</p>
+                    <p dir="rtl">................</p>
+                    <p dir="rtl">................</p>
+                    <p dir="rtl">.............</p>
+                    <p dir="rtl">....</p>
+                    <p dir="rtl">...............</p>
+                </ol>
+
+                <ol class="time">
+                    <p>3:27</p>
+                    <p>5:12</p>
+                    <p>2:54</p>
+                    <p>3:51</p>
+                    <p>4:51</p>
+                    <p>3:46</p>
+                    <p>3:09</p>
+                    <p>7:02</p>
+                    <p>3:37</p>
+                    <p>3:11</p>
+                    <p>3:51</p>
+                </ol>
+
             </div>
 
-            <div id="more-image" class="elements">
-                <img src="images/more_ico.svg">
-            </div>
+            <nav>
+                <center>
+                    <div class="shuffle-play">
+                        <p>SHUFFLE PLAY</p>
+                    </div>
+                </center>
+                <center>
+                    <div class="arrow">
+
+                        <input id="back_ico_arrow_playlist" type="image" value="Animate" src="images/back_ico.svg">
+
+                    </div>
+                </center>
+            </nav>
+
         </div>
 
-        <!-- Flickity HTML init -->
-        <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
-            <div class="gallery-cell">
+        <!-- Third layout - Playlist -->
+
+        <div id="background-covers">
+            <div class="background-cover">
                 <center>
                     <div class="main-cd-image">
                         <img src="images/unreleased_cover.png">
-                        <center>
-                            <div class="circle">
-                                <div class="daftcode-logo">
-                                    <img src="images/daft_logo.svg">
-                                </div>
-                            </div>
-                        </center>
+
                     </div>
                 </center>
             </div>
-            <div class="gallery-cell"><img class="small-cover" src="images/cover.png"></div>
-            <div class="gallery-cell"><img class="small-cover" src="images/cover-1.png"></div>
-        </div>
 
-        <center>
-            <div class="album-title">
-                <h2>Self Conscious</h2>
-                <p>KANYE WEST</p>
-            </div>
-        </center>
+            <div class="background-cover-transparent">
+                <div id="container-buttons">
 
-        <div id="play-buttons">
+                    <div class="back-image">
 
-            <div id="shuffle" class="playing-buttons">
-                <img src="images/shuffle_ico.svg">
-            </div>
+                        <input id="back_ico_background-cover-transparent" type="image" value="Animate" src="images/back_ico.svg" />
 
-            <div id="prev" class="playing-buttons prev-next">
-                <img src="images/next_ico.svg">
-            </div>
+                    </div>
 
-            <div id="next" class="playing-buttons prev-next">
-                <img src="images/previous_ico.svg">
-            </div>
+                    <div id="more-button">
 
-            <div id="repeat" class="playing-buttons">
-                <img src="images/repeat_ico.svg">
-            </div>
+                        <img src="images/more_ico.svg">
 
-        </div>
+                    </div>
+                </div>
 
-        <center>
-            <div id="play"><img src="images/Play_inactive.png"></div>
-        </center>
+                <center>
+                    <div class="main-cover-small"><img src="images/unreleased_cover.png"></div>
+                </center>
 
-        <div class="song-time">
-            <p id="time-left">1:47</p>
-            <center><img src="images/load.png"></center>
-            <p id="time-right">4:21</p>
-        </div>
+                <center>
+                    <div class="album-title">
 
-        <div class="sound"><img src="images/sound.png">
-            <div>
+                        <h2>Self Conscious</h2>
+
+                        <p>KANYE WEST</p>
+
+                    </div>
+                </center>
+
+                <center>
+                    <div class="dots">
+                        <div class="dot" id="dot-1"></div>
+                        <div class="dot" id="dot-2"></div>
+                        <div class="dot" id="dot-3"></div>
+                    </div>
+                </center>
+
+                <center>
+                    <div class="options">
+
+                        <p class="option">Add to playlist</p>
+                        <p class="option">Show Album</p>
+
+                        <p class="option">Share with friends</p>
+
+                    </div>
+                </center>
+
                 <nav>
                     <div class="playlist-menu">
-                       <div id="playlist_button">
-                            <a href="#songs" onclick="myFunction()"><img src="images/playlist_ico.svg"></a>
+                        <div id="playlist_button">
+
+                            <input type="image" value="Animate" src="images/playlist_ico.svg" onclick="document.getElementById('playlist').className='move';">
+
                         </div>
                         <div class="next-song">
                             <h2>NEXT</h2>
@@ -213,171 +321,6 @@
             </div>
         </div>
     </div>
-
-    <div class="background-cover-transparent">
-        <div id="container-buttons">
-
-            <div id="back-image" class="elements">
-                <img src="images/back_ico.svg">
-            </div>
-
-            <div id="more-image" class="elements">
-                <img src="images/more_ico.svg">
-            </div>
-
-        </div>
-
-        <center>
-            <div class="main-cover-small"><img src="images/unreleased_cover.png"></div>
-        </center>
-
-        <center>
-            <div class="album-title">
-
-                <h2>Self Conscious</h2>
-
-                <p>KANYE WEST</p>
-
-            </div>
-        </center>
-
-        <center>
-            <div class="dots">
-                <div class="dot" id="dot-1"></div>
-                <div class="dot" id="dot-2"></div>
-                <div class="dot" id="dot-3"></div>
-            </div>
-        </center>
-
-        <center>
-            <div class="options">
-
-                <p class="option">Add to playlist</p>
-                <p class="option">Show Album</p>
-
-                <p class="option">Share with friends</p>
-
-            </div>
-        </center>
-
-        <nav>
-            <div class="playlist-menu">
-                <div id="playlist_button">
-                    <a href="#songs" onclick="myFunction()"><img src="images/playlist_ico.svg"></a>
-                </div>
-                <div class="next-song">
-                    <h2>NEXT</h2>
-                    <p><span id="title">Livin'In A Movie </span><span id="spacing">  .  .  .  .  .  .  . .  .  .  .</span> 3:27</p>
-                </div>
-            </div>
-        </nav>
-    </div>
-
-
-    <div id="playlist_popup">
-        <div class="transparent-background-playlist"></div>
-
-        <div class="image-gradient"><img src="images/bg_image_bw.jpg"></div>
-        <div id="container-buttons">
-
-            <div id="back-image" class="elements">
-                <img src="images/back_ico.svg">
-            </div>
-            <div class="active-song">
-                <h2>Self Conscious</h2>
-
-                <p>KANYE WEST</p>
-            </div>
-            <div id="play-image-small" class="elements">
-                <img src="images/Play_active.png">
-            </div>
-
-        </div>
-
-        <div class="playlist-background">
-            <ol>
-                <li>
-                    <p>Livin' In A Movie</p>
-                </li>
-                <li>
-
-                    <p>Dark Fantasy</p>
-                </li>
-
-                <li>
-                    <p>All od the Lights</p>
-                </li>
-                <li>
-                    <p>So Appalled</p>
-                </li>
-                <li>
-                    <p>Devil in a New Dress</p>
-                </li>
-                <li>
-                    <p>Runaway</p>
-                </li>
-                <li>
-                    <p>Hell of a Life</p>
-                </li>
-                <li>
-                    <p>Blame Game</p>
-                </li>
-                <li>
-                    <p>Lost in the World</p>
-                </li>
-                <li id="margin-li">
-                    <p>Who Will Survive in America</p>
-                </li>
-                <li id="margin-li">
-                    <p>Dark Fantasy</p>
-                </li>
-
-            </ol>
-
-            <ol class="dots-middle">
-                <p dir="rtl">.............</p>
-                <p dir="rtl">................</p>
-                <p dir="rtl">.............</p>
-                <p dir="rtl">.................</p>
-                <p dir="rtl">..........</p>
-                <p dir="rtl">..................</p>
-                <p dir="rtl">................</p>
-                <p dir="rtl">................</p>
-                <p dir="rtl">.............</p>
-                <p dir="rtl">....</p>
-                <p dir="rtl">...............</p>
-            </ol>
-
-            <ol class="time">
-                <p>3:27</p>
-                <p>5:12</p>
-                <p>2:54</p>
-                <p>3:51</p>
-                <p>4:51</p>
-                <p>3:46</p>
-                <p>3:09</p>
-                <p>7:02</p>
-                <p>3:37</p>
-                <p>3:11</p>
-                <p>3:51</p>
-            </ol>
-
-        </div>
-
-        <nav>
-            <center>
-                <div class="shuffle-play">
-                    <p>SHUFFLE PLAY</p>
-                </div>
-            </center>
-            <center>
-                <div class="arrow"><img src="images/back_ico.svg"></div>
-            </center>
-        </nav>
-
-    </div>
-
-
 
 
 
@@ -386,14 +329,7 @@
 
     <script language="JavaScript" type="text/javascript" src="js/main.js"></script>
 
-
-<!--
-     Latest compiled and minified JavaScript 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
--->
-
     <script language="JavaScript" type="text/javascript" src="js/fickity.pkgd.min.js"></script>
-
 
 </body>
 
